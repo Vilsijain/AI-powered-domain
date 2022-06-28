@@ -7,13 +7,6 @@ def load_model():
     model = gensim.models.KeyedVectors.load_word2vec_format(os.getenv('DOWNLOAD_FILE_NAME'), binary=False)
     return model 
                  
-def generate_tlds(word):
-    result=[]
-    str2 = ['.com', '.in', '.co', '.net', '.org', '.co', '.info', '.me', '.website', '.tech','.host', '.cricket']
-    for i in random.sample(str2,12):
-        strres=word+i
-        result.append(strres)
-    return list(result)
 
  
 def generate_prepended_strings(word):
