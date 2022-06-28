@@ -6,7 +6,6 @@ from flask_cors import cross_origin
 from utils import (
         generate_appended_strings,
         generate_prepended_strings,
-        generate_tlds,
         merge_words,
         generate_top_10
 )
@@ -40,7 +39,6 @@ def generate_all(word):
     generators = {
                     'append': generate_appended_strings,
                     'prepend': generate_prepended_strings,
-                    'tlds': generate_tlds,
                     "ai_powered_word_score": generate_top_10
                 }
     result = {}
