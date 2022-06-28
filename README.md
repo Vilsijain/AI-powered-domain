@@ -1,1 +1,1 @@
-# AI-powered-domain
+# All-one
