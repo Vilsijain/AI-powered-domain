@@ -4,7 +4,8 @@ import nltk
 import gensim
 
 def load_model():
-    model = gensim.models.KeyedVectors.load_word2vec_format(os.getenv('DOWNLOAD_FILE_NAME'), binary=False)
+    #model = gensim.models.KeyedVectors.load_word2vec_format(os.getenv('DOWNLOAD_FILE_NAME'), binary=False)
+    model = gensim.models.KeyedVectors.load('https://api-cosmodomain.s3.ap-south-1.amazonaws.com/finalgog',mmap='r')
     return model 
                  
 
